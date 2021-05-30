@@ -12,7 +12,6 @@ keyboard = Controller()
 url = "https://buzzin.live/play"
 browserbin = "chromium-browser"
 pkillprocess = "chromium*"
-#buzzinid = "acbmefdcailofhpmndnallkffehangff"
 
 def run_js(tab, code):
     return tab.call_method("Runtime.evaluate", expression=code)
@@ -47,7 +46,7 @@ def main():
             keyboard.press('b') # alternative: run_js(tab, 'document.getElementById("buzzer").click()')
             #board.led.state = Led.DECAY
             board.button.wait_for_release()
-            keyboard.release(' ')
+            keyboard.release('b')
             board.led.state = Led.PULSE_SLOW
             print('Released')
             
