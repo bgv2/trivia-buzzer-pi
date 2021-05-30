@@ -5,6 +5,7 @@ Use your Raspberry Pi + AIY Project Voice Kit as a trivia buzzer. Code can be ad
 2. AIY Voice Kit (this is designed for V1, with some Python knowledge you could probably adapt this for any hardware button)
 3. An mp3 file called `start.mp3` in the same directory as these files (you can try a tone from [here](https://theinteractivist.com/free-ringtones-iringpro/)—make sure to download the Android versions
 ## How it works
+You need to install the dependencies first.
 1. You run the Python script.
 2. In the Chromium window that opens, you enter the code for your Buzzin game, then push your hardware button.
 3. After the script runs some code to unmute the buzzer, you can then use your hardware button to operate the buzzer, since it basically pushes the <kbd>B</kbd> key. You can unplug the monitor at this point.
