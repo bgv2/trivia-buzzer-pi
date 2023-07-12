@@ -11,7 +11,6 @@ import io
 keyboard = Controller()
 url = "https://buzzin.live/play"
 browserbin = "chromium-browser"
-pkillprocess = "chromium*"
 
 def run_js(tab, code):
     return tab.call_method("Runtime.evaluate", expression=code)
